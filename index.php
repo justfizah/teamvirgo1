@@ -38,14 +38,16 @@
         <div class="overlay-container">
           <div class="overlay">
             <div class="overlay-panel overlay-left">
-              <h1>teamVirgo</h1>
+<!--               <h1>teamVirgo</h1> -->
+              <img src="images/logo.png" id="teamlogo">
               <img alt="avatars" src="images/avatars.png">
               <h3>Have an account?</h3>
               <button class="ghost" id="signIn">Sign In</button>
             </div>
             <div class="overlay-panel overlay-right">
-                <h1>teamVirgo</h1>
-                <img alt="avatars" src="images/avatars.png">
+<!--                 <h1>teamVirgo</h1> -->
+                <img src="images/logo.png" id="teamlogo">
+               <img alt="avatars" src="images/avatars.png">
               <h1>Hello, Friend!</h1>
               <p><b>Start your journey with us.</b></p>
               <button class="ghost" id="signUp">Sign Up</button>
