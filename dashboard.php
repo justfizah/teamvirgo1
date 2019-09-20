@@ -1,7 +1,9 @@
 <?php
 
+	
 session_start();
 if (!isset($_SESSION['username'])) {
+
 	header('location:index.php');
 }
 ?>
@@ -23,17 +25,17 @@ if (!isset($_SESSION['username'])) {
 						<div class="teamVirgoFont">
 							<h1>teamVirgo</h1>
 						</div>
+						<div><a clas href="logout.php" class="float-right">LOGOUT</a></div>
 					</div>
 				</div>
 			</header>
-		</section>
-		<div><a clas href="logout.php">LOGOUT</a></div>
-<p style="color: red;">Login Success!</p>
-<div class="Welcome">
-<h2>Welcome <?php echo $_SESSION['username'];?></h2>
+			<div class="Welcome">
+<<h2><center>Welcome <?php echo $_SESSION['username'];?>!</center></h2>
 <div class="work">
 	<p2>What work would you like to create today?</p2>
 	</div>
+		</section>
+	
 
 </body>
 </html>
