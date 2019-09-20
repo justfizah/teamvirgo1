@@ -195,6 +195,37 @@ button .ghost{
     width: 20rem;
 }
 
+#teamlogo {
+    width: 16rem;
+    height: 6rem;
+}
+
+@media screen and (max-width: 400px) {
+    .overlay-panel .overlay-right img{
+        margin-top: 69px;
+        height: 7rem;
+        width: 9rem;
+    }
+
+    .overlay-panel img{
+        margin-top: 49px;
+        height: 7rem;
+        width: 9rem;
+    }
+
+    #teamlogo {
+        margin-top: 12rem;
+        width: 11rem;
+        height: 4rem;
+    }
+
+    .overlay-panel .overlay-right #teamlogo{
+        margin-top: 49px;
+        height: 7rem;
+        width: 9rem;
+    }
+}
+
 .overlay-panel h3{
     /* font-weight:bold; */
     color: #ffffff;
