@@ -7,11 +7,14 @@
 body{
     font-size: 62.5%;
     font-family: 'Montserrat', sans-serif;
+    max-width: 100vw !important;
+    overflow-x: hidden;
 }
 
 main{
     display: flex;
     align-items: center;
+    height: auto;
 }
 
 .side{
@@ -192,7 +195,7 @@ h2{
     }
 
     .main{
-        padding: 50px;
+        padding:  50px;
     }
 }
 
@@ -204,6 +207,13 @@ h2{
     .avatars{
         height: 80px;
         margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .container{
+        width: 100% !important;
+        min-width: 100%;
     }
 }
 
@@ -221,9 +231,4 @@ h2{
 form{
     transition: 0.4s ease all;
     /* animation: 0.4s fadein; */
-}
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
 }

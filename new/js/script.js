@@ -30,6 +30,9 @@ function showLogin(e){
     showEl(loginHeading);
     showEl(ctaLogin);
     showEl(showRegLink);
+
+
+    document.title = "Login ~ Team virgo";
 }
 
 // shows the registration form
@@ -45,6 +48,8 @@ function showReg(e){
     showEl(regHeading);
     showEl(ctaReg);
     showEl(showLoginLink);
+
+    document.title = "Sign up ~ Team virgo";
 }
 
 function showEl(el){
