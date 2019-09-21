@@ -24,7 +24,10 @@ $result = mysqli_query($con, $s);
 
 $num = mysqli_num_rows($result);
 
-
+if (!preg_match("/^[a-zA-Z]*$/", $username) || !preg_match("/^[a-zA-Z]*$/", $email)) {
+           header("Location: ../signup.php?signup=invalid");
+           exit();
+}
 if ($num == 1) {
 	echo "Username Already Taken";
 }
