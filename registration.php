@@ -27,7 +27,12 @@ $num = mysqli_num_rows($result);
 
 if ($num == 1) {
 	echo "Username Already Taken";
-}else{
+}
+if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+               header("Location: ../signup.php?signup=email");
+               exit();
+}
+else{
 	$reg= "insert into usertable(username , email , password) values ('$username' ,  '$email', '$password')";
 	mysqli_query($con, $reg);
 	echo "Registration Successful";
