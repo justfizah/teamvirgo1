@@ -56,7 +56,7 @@
                 </div>
 
                  <div class="form">
-                        <form action="registration.php" id="login-form" METHOD="POST">
+                        <form action="validation.php" id="login-form" METHOD="POST">
                             <div class="form-group">
                                 <label for="username">Username: </label>
                                 <input type="text" name="username"  class="form-input">
@@ -75,7 +75,7 @@
                             </div>
                         </form>
 
-                        <form action="validation.php" id="reg-form" METHOD="POST">
+                        <form action="registration.php" id="reg-form" METHOD="POST">
                             <div class="form-group">
                                 <label for="username">Username: </label>
                                 <input type="text" name="username"  class="form-input">
