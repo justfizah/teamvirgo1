@@ -13,7 +13,7 @@ mysqli_select_db($con, 'userregistration');
 
 
 $username = $_POST['username'];
-$email = $_POST['email'];
+// $email = $_POST['email'];
 $password = $_POST['password'];
 
 
@@ -28,5 +28,6 @@ if ($num == 1) {
 	$_SESSION['username'] = $username;
 	header('location: dashboard.php');
 }else{
-header('location:index.php');}
+header('location:index.php');
+}
  ?>
